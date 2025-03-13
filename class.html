@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+
+<body>
+    <script>
+        class Animal {
+            constructor(name,sound,breed) {
+                this.name=name;
+                this.sound=sound;
+                this.breed=breed;
+            }
+
+            makeSound(){
+                console.log(`${this.name} says ${this.sound}`);
+            }
+
+            showBreed() {
+                console.log(`${this.name} is a ${this.breed}`);
+            }
+        }
+    
+        const myDog = new Animal("Horlicks", "Woof!", "Golden Retriever");
+        myDog.makeSound();
+        myDog.showBreed(); 
+
+
+    </script>
+</body>
+
+</html>

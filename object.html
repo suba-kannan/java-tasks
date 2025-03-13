@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <script>
+        const pet={
+            name:"Horlicks",
+            age:3,
+            favorite:"toys,food,park",
+            isFriendly:true,
+            petFriends:{
+                name1:"lucky",
+                name2:"prince"
+            }
+        }
+        pet.owner="suba";
+        delete pet.age;
+        console.log(pet);
+        console.log(pet.name);
+        console.log(pet["isFriendly"]);
+        console.log(pet.petFriends.name2);
+
+    </script>
+    
+</body>
+</html>

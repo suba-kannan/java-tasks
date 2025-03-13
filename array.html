@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <script>
+        // let favColors = ["reg", "yellow", "blue"];
+        // favColors[4] = 87;
+
+
+        // let numbers = [10, 5, 20, 8, 15];
+
+        // //map = num*2
+        // let doubledNumbers = numbers.map(num => num * 2);
+        // console.log("Doubled Numbers:", doubledNumbers);
+
+        // //filter = num>10
+        // let filteredNumbers = numbers.filter(num => num > 10);
+        // console.log("Filtered Numbers (greater than 10):", filteredNumbers);
+
+        // //forEach
+        // console.log("Numbers in array:");
+        // numbers.forEach(num => console.log(num));
+
+        // //sort = ascending order
+        // let sortedNumbers = [...numbers].sort((a, b) => a - b);
+        // console.log("Sorted Numbers:", sortedNumbers);
+
+        // //sort = descending order
+        // let sortedDescNumbers = [...numbers].sort((a, b) => b - a);
+        // console.log("Sorted Numbers (Descending):", sortedDescNumbers);
+
+
+        // console.log(numbers.length);
+
+        // delete numbers[3];
+        // console.log(numbers);
+
+        // numbers[5] = 54;
+        // console.log(numbers);
+
+
+
+        const items = [
+            { id: 1, name: "Apple", category: "Fruit", price: 3, quantity: 10 },
+            { id: 2, name: "Carrot", category: "Vegetable", price: 2, quantity: 15 },
+            { id: 3, name: "Banana", category: "Fruit", price: 1, quantity: 20 },
+            { id: 4, name: "Potato", category: "Vegetable", price: 1, quantity: 25 },
+            { id: 5, name: "Orange", category: "Fruit", price: 2, quantity: 12 }
+        ];
+
+        //map
+        const itemNames = items.map(item => item.name);
+        console.log("Item Names:", itemNames);
+
+        //filter
+        const fruits = items.filter(item => item.category === "Fruit");
+        console.log("Fruits:", fruits);
+
+        //forEach
+        console.log("Item Prices:");
+        items.forEach(item => console.log(`${item.name}: $${item.price}`));
+
+        //sort
+        const sortedPrice = items.sort((a, b) => a.price - b.price);
+        console.log("Sorted by Price:", sortedPrice);
+
+
+
+    </script>
+
+</body>
+
+</html>

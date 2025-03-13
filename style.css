@@ -1,0 +1,45 @@
+/* Background Styling */
+body {
+    background:url('https://images.unsplash.com/photo-1462556791646-c201b8241a94?q=80&w=1465&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Dark Overlay for Better Readability */
+body::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.5); /* Adjust darkness */
+    z-index:-1;
+}
+
+/* Login Card */
+.card {
+    width:350px;
+    padding:20px;
+    border-radius:10px;
+    background:rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    box-shadow:0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.form-control {
+    border-radius:5px;
+}
+
+.btn-primary {
+    background-color:#2575fc;
+    border:none;
+}
+
+.btn-primary:hover {
+    background-color:#1a5fc8;
+}
+
+a:hover {
+    text-decoration:underline;
+}
